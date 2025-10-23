@@ -1,4 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+      
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+      
+        if (!name || !email || !message) {
+          alert("يرجى ملء جميع الحقول قبل الإرسال.");
+          return;
+        }
+      
+        const phoneNumber = "201111955768"; 
+        const text = `مرحباً، أنا ${name}%0Aالبريد الإلكتروني: ${email}%0A%0A${message}`;
+        const url = `https://wa.me/${phoneNumber}?text=${text}`;
+        
+        window.open(url, "_blank");
+      });
+      
+      
     // Load blog posts from JSON file
     fetch("data/blog.json")
       .then((response) => response.json())

@@ -57,7 +57,7 @@
   <!-- ================= Navbar ================= -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-gold" href="#">المحامي أحمد الوجيه</a>
+      <a class="navbar-brand fw-bold text-gold" href="index.html"><img src="assets/images/logo.png" style="width:50px"> أحمد الوجيه </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -79,7 +79,7 @@
     <div class="overlay"></div>
     <div class="container position-relative">
       <h1 class="display-4 fw-bold mb-3">العدالة تبدأ بخطوة صحيحة</h1>
-      <p class="lead mb-4"> أحمد الوجيه، محامٍ ومستشار قانوني متخصص في القضايا المدنية والتجارية.</p>
+      <p class="lead mb-4"> أحمد الوجيه، <span style="color: var(--gold);"><strong>محامٍ ومستشار قانوني</strong></span> متخصص في القضايا المدنية والتجارية.</p>
       <a href="#contact" class="btn btn-gold btn-lg px-4">احجز استشارتك الآن</a>
     </div>
   </header>
@@ -150,10 +150,10 @@
     <div class="container">
       <h2 class="section-title text-center mb-5">الإنجازات والمسيرة المهنية</h2>
       <ul class="timeline">
-        <li><span class="year">2014</span> التخرج بدرجة ماجستير في القانون التجاري.</li>
-        <li><span class="year">2016</span> افتتاح المكتب القانوني الخاص بالقاهرة.</li>
-        <li><span class="year">2019</span> الحصول على جائزة التميز القانوني.</li>
-        <li><span class="year">2023</span> تمثيل أكثر من 200 عميل في قضايا مدنية وتجارية.</li>
+        <li><span class="year">2016</span> التخرج بدرجة ماجستير في القانون التجاري.</li>
+        <li><span class="year">2018</span> افتتاح المكتب القانوني الخاص .</li>
+        <li><span class="year">2021</span> الحصول على جائزة التميز القانوني.</li>
+        <li><span class="year">2025</span> تمثيل أكثر من 200 عميل في قضايا مدنية وتجارية.</li>
       </ul>
     </div>
   </section>
@@ -198,22 +198,26 @@
       <h2 class="section-title text-center mb-5">اتصل بي</h2>
       <div class="row">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <form action="mailto:ahmedlawoffice@example.com" method="POST" enctype="text/plain">
+          <form id="whatsappForm" class="p-4 rounded-3 shadow-sm bg-white">
             <div class="mb-3">
-              <input type="text" class="form-control" placeholder="الاسم الكامل">
+              <input type="text" id="name" class="form-control" placeholder="الاسم الكامل" required>
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control" placeholder="البريد الإلكتروني">
+              <input type="email" id="email" class="form-control" placeholder="البريد الإلكتروني" required>
             </div>
             <div class="mb-3">
-              <textarea class="form-control" rows="5" placeholder="اكتب رسالتك..."></textarea>
+              <textarea id="message" class="form-control" rows="5" placeholder="اكتب رسالتك..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-gold px-5">إرسال</button>
+            <button type="submit" class="btn btn-whatsapp w-100 py-2">
+              <i class="fab fa-whatsapp me-2"></i> إرسال عبر واتساب
+            </button>
           </form>
         </div>
+        
+        
         <div class="col-lg-6">
           <!-- Google Map Embed -->
-          <div class="rounded-3 shadow-sm overflow-hidden" style="height: 350px;">
+          <div class="map-card">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1663.3548048870146!2d30.81358078641803!3d30.821139993119946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f6341a833c4387%3A0xc59ee95d2f8456a8!2sFamily%20Court%20-%20Kafr%20El%20Zayyat!5e0!3m2!1sen!2seg!4v1761243531660!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -231,7 +235,7 @@
       </p>
       <p class="mb-1"><i class="fas fa-phone"></i>
         <a href="tel:+201111955768" class="text-gold text-decoration-none" title="اتصل الآن">
-          201111955768
+          01111955768
         </a>
       </p>
       <p class="mb-0">© 2025 جميع الحقوق محفوظة | المحامي أحمد الوجيه</p>
