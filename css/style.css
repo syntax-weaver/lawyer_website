@@ -1,0 +1,94 @@
+
+body {
+  font-family: 'Cairo', sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+  line-height: 1.8;
+}
+
+.text-gold { color: #b59b4c; }
+
+.navbar .nav-link {
+  color: #333 !important;
+  font-weight: 600;
+  margin-inline: 10px;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover { color: #b59b4c !important; }
+
+.hero {
+  background: url('../assets/images/hero-bg-4.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+  object-fit: contain;
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 14, 30, 0.55);
+}
+.hero .container {
+  z-index: 2;
+}
+
+.btn-gold {
+  background-color: #b59b4c;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-gold:hover {
+  background-color: #9c8643;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #1e2a3a;
+}
+
+.practice-card {
+  background-color: #fff;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.practice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  border-right: 3px solid #b59b4c;
+  margin-right: 20px;
+}
+.timeline li {
+  padding: 10px 20px;
+  position: relative;
+}
+.timeline li::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: -8px;
+  width: 15px;
+  height: 15px;
+  background: #b59b4c;
+  border-radius: 50%;
+}
+.year {
+  color: #1e2a3a;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e9ecef, #dee2e6);
+}
+
+footer {
+  background-color: #0f1724;
+}
