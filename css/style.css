@@ -132,3 +132,39 @@ footer {
   transform: translateY(-3px);
 }
 
+.blog-card img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.blog-card .btn-gold {
+  font-size: 14px;
+  padding: 6px 16px;
+}
+
+.text-gold {
+  color: #b89b4c !important;
+}
+
+.modal-content {
+  background-color: #fafafa;
+  border-radius: 1rem;
+}
+
+.modal-header h5 {
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.4rem;
+}
+
+.modal-body p {
+  line-height: 1.9;
+  color: #555;
+}
+
+.btn-outline-dark:hover {
+  background-color: #1e1e2f;
+  color: #fff;
+  border-color: #1e1e2f;
+}
+
